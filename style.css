@@ -166,7 +166,7 @@ h4 {
      display: flex;
      flex-wrap: wrap;
      flex-direction: row;
-     justify-content: space-between;
+     justify-content: space-evenly;
      width: auto;
      margin-left: calc(var(--spacing)*-2);
      margin-right: calc(var(--spacing)*-2);
@@ -318,7 +318,6 @@ h3 a {
      .darkmodelabel {
         text-align: left;
     }
-    
 }
 
 @media screen and (max-width: 520px) {
