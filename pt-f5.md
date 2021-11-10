@@ -8,6 +8,8 @@ This font was built in 2018 for the project and will soon be available for purch
 
 It includes capital and non-capital letters, common punctuation, and a handful of useful symbols.
 
+### [Download it here](https://www.dropbox.com/s/2et9s8uocx2qy69/PT-F5-Regular.otf?dl=0)
+
 ![PT-F5 Demo 1](images/f5-demo-1.jpg)
 
 ![PT-F5 Demo 2](images/f5-demo-2.jpg)
@@ -15,4 +17,3 @@ It includes capital and non-capital letters, common punctuation, and a handful o
 This font can be used for non-commercial or commercial purposes.
 
 Not required, but I would love any links to work you've made using the font so I can advertise.
-### [Download](https://www.dropbox.com/s/2et9s8uocx2qy69/PT-F5-Regular.otf?dl=0)
