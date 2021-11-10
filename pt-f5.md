@@ -3,7 +3,7 @@ layout: page
 title: PT-F5
 ---
 
-## The font
+## PT-F5 (the font)
 This font was built in 2018 for the project and will soon be available for purchase.
 
 It includes capital and non-capital letters, common punctuation, and a handful of useful symbols.
