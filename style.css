@@ -168,8 +168,8 @@ h4 {
      flex-direction: row;
      justify-content: normal;
      width: auto;
-     margin-left: calc(var(--spacing)*-2);
-     margin-right: calc(var(--spacing)*-2);
+     margin-left: calc(var(--spacing)*-1);
+     margin-right: calc(var(--spacing)*-1);
  }
 
  .contentgrid .contentcontainer {
@@ -184,8 +184,8 @@ h4 {
     /*
     width: calc(100% - (var(--spacing)*4));
     */
-    margin-left: calc(var(--spacing)*2);
-    margin-right: calc(var(--spacing)*2);
+    margin-left: calc(var(--spacing)*1);
+    margin-right: calc(var(--spacing)*1);
  }
 
  .header {
