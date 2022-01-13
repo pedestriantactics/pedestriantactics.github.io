@@ -213,8 +213,8 @@ h4 {
      min-width: max-content;
  }
 
-h3 a, .section-header {
-    display: inline;
+h3 a, section-header {
+    display: inline-block;
  }
 
  h3 a:hover, h3 a.active, .section-header {
@@ -228,6 +228,7 @@ h3 a, .section-header {
 .section-header {
     /*border-bottom: solid var(--color-primary) var(--border-width);*/
     margin-bottom: calc(var(--spacing)*4);
+    margin-left: 0.2em;
 }
 
 /*footer*/
