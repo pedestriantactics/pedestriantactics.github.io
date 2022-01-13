@@ -225,12 +225,12 @@ h4 {
     padding-bottom: calc(var(--spacing)*1);
 }
 
-h3 a, .pagecontainer .navcolumn-heading h3 {
+h3 a, .pagecontainer .navcolumn-heading {
     display: inline;
     padding: 0;
  }
 
- h3 a:hover, h3 a.active, .pagecontainer .navcolumn-heading h3 {
+ h3 a:hover, h3 a.active, .pagecontainer .navcolumn-heading {
     color: var(--color-secondary);
     background-color: var(--color-primary);
     padding: 0;
@@ -241,7 +241,7 @@ h3 a, .pagecontainer .navcolumn-heading h3 {
 /*footer*/
 
 .footerborder {
-    border-top: solid var(--color-primary) var(--border-width);
+    /*border-top: solid var(--color-primary) var(--border-width);*/
     width: auto;
 }
 
