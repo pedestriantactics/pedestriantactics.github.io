@@ -215,7 +215,7 @@ h4 {
 
  .navcolumn-heading {
      display: block;
-     border-bottom: solid var(--color-primary) var(--border-width);
+     /*border-bottom: solid var(--color-primary) var(--border-width);*/
      margin-bottom: calc(var(--spacing)*1);
      padding-bottom: calc(var(--spacing)*1);
  }
@@ -225,12 +225,12 @@ h4 {
     padding-bottom: calc(var(--spacing)*1);
 }
 
-h3 a {
+h3 a, .navcolumn-heading h3 {
     display: inline;
     padding: 0;
  }
 
- h3 a:hover, h3 a.active, .navcolumn-heading h3 {
+ h3 a:hover, h3 a.active, .pagecontainer .navcolumn-heading h3 {
     color: var(--color-secondary);
     background-color: var(--color-primary);
     padding: 0;
