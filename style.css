@@ -75,7 +75,7 @@ url("fonts/PT-F5-Regular.otf") format("opentype");
     --color-tertiary: blue;
     --font: "PT-F5 Regular", "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
     --body-size: 10px;
-    --line-height-multiplier: 1.2;
+    --line-height-multiplier: 1.4;
     --h1-size: calc(var(--body-size)*12);
     --h2-size: calc(var(--body-size)*3);
     --h3-size: calc(var(--body-size)*1.5);
@@ -93,7 +93,7 @@ html, body, p, a, h1, h2, h3 {
     font-family: var(--font);
     color: var(--color-primary);
     background-color: var(--color-secondary);
-    margin-bottom: calc(var(--spacing)*0.5);
+    margin-bottom: calc(var(--spacing)*0.8);
     text-decoration: none;
 }
 
