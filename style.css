@@ -113,7 +113,7 @@ body {
     font-size: var(--body-size);
     line-height: calc(var(--body-size)*var(--line-height-multiplier));
 }
-
+    
 h1 {
     font-size: var(--h1-size);
     line-height: calc(var(--h1-size)*var(--line-height-multiplier));
@@ -123,11 +123,11 @@ h2 {
     font-size: var(--h2-size);
     line-height: calc(var(--h2-size)*var(--line-height-multiplier));
 }
-h3 {
+h3, .navcolumn-heading {
     font-size: var(--h3-size);
     line-height: calc(var(--h3-size)*var(--line-height-multiplier));
 }
-h3 a{
+h3 a, .navcolumn-heading{
     padding-bottom: 0;
     margin-right: calc(var(--spacing)*1);
 }
@@ -225,12 +225,12 @@ h4 {
     padding-bottom: calc(var(--spacing)*1);
 }
 
-h3 a, .pagecontainer .navcolumn-heading {
+h3 a, .navcolumn-heading {
     display: inline;
     padding: 0;
  }
 
- h3 a:hover, h3 a.active, .pagecontainer .navcolumn-heading {
+ h3 a:hover, h3 a.active, .navcolumn-heading {
     color: var(--color-secondary);
     background-color: var(--color-primary);
     padding: 0;
@@ -298,9 +298,9 @@ h3 a, .pagecontainer .navcolumn-heading {
         flex-direction: column;
         justify-content: space-between;
     }
-    /*.navcontainer {*/
-    /*    width: calc(100% + (var(--spacing)*4));*/
-    /*}*/
+    .navcontainer {
+        width: calc(100% + (var(--spacing)*4));
+    }
     .contentgrid .contentcontainer {
         /*index grid double rows for smallish screens*/
         width: calc(50% - (var(--spacing)*4));
