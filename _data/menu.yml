@@ -1,17 +1,17 @@
 # if no url is specified, default.html will use a lowercase version of the title
 
-- title: Catalog
-  contents:
-  - title: 2020-Remixes
-  - title: 2019-Remixes
-  - title: PT-T58
-  - title: PT-A10
-  - title: PT-A9
-  - title: PT-T41
-  - title: PT-T42
-  - title: PT-A8
-  - title: PT-A7
-  - title: PT-T23
+#- title: Catalog
+#  contents:
+#  - title: 2020-Remixes
+#  - title: 2019-Remixes
+#  - title: PT-T58
+#  - title: PT-A10
+#  - title: PT-A9
+#  - title: PT-T41
+#  - title: PT-T42
+#  - title: PT-A8
+#  - title: PT-A7
+#  - title: PT-T23
 
 - title: Links
   contents:

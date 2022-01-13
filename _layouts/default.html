@@ -71,7 +71,7 @@
 
                     {% for item in site.data.menu %}
                         <div class="navcontainer-navcolumn">
-                            <p class="navcolumn-heading">{{ item:title }}</p>
+<!--                            <p class="navcolumn-heading">{{ item:title }}</p>-->
                             {% for entry in item.contents %}
                                 <!--This generates the link URL from a lowercased version of the title if no URL is specified-->
                                 {% if entry.url %}
