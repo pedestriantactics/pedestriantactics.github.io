@@ -123,11 +123,11 @@ h2 {
     font-size: var(--h2-size);
     line-height: calc(var(--h2-size)*var(--line-height-multiplier));
 }
-h3, .navcolumn-heading {
+h3{
     font-size: var(--h3-size);
     line-height: calc(var(--h3-size)*var(--line-height-multiplier));
 }
-h3 a, .navcolumn-heading{
+h3 a{
     padding-bottom: 0;
     margin-right: calc(var(--spacing)*1);
 }
@@ -213,30 +213,22 @@ h4 {
      min-width: max-content;
  }
 
- .navcolumn-heading {
-     display: block;
-     /*border-bottom: solid var(--color-primary) var(--border-width);*/
-     margin-bottom: calc(var(--spacing)*1);
-     padding-bottom: calc(var(--spacing)*1);
- }
-
- .pagecontainer .navcolumn-heading {
-    margin-bottom: calc(var(--spacing)*4);
-    padding-bottom: calc(var(--spacing)*1);
-}
-
-h3 a, .navcolumn-heading {
+h3 a, .section-header {
     display: inline;
-    padding: 0;
  }
 
- h3 a:hover, h3 a.active, .navcolumn-heading {
+ h3 a:hover, h3 a.active, .section-header {
     color: var(--color-secondary);
     background-color: var(--color-primary);
     padding: 0;
     outline: solid var(--color-primary) 0.2em; 
         /*outline size is in em so it changes with the parent type*/
  }
+
+.section-header {
+    /*border-bottom: solid var(--color-primary) var(--border-width);*/
+    margin-bottom: calc(var(--spacing)*4);
+}
 
 /*footer*/
 

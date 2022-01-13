@@ -204,14 +204,14 @@ h4 {
      min-width: max-content;
  }
 
- .navcolumn-heading {
+ .section-header {
      display: block;
      border-bottom: solid var(--color-primary) var(--border-width);
      margin-bottom: calc(var(--spacing)*1);
      padding-bottom: calc(var(--spacing)*1);
  }
 
- .pagecontainer .navcolumn-heading {
+ .pagecontainer .section-header {
     margin-bottom: calc(var(--spacing)*4);
     padding-bottom: calc(var(--spacing)*1);
 }
