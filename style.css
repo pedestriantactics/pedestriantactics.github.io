@@ -137,7 +137,7 @@ h4 {
 }
 
  /*vertical spacing between containers*/
- .header-logo, .navcontainer, .contentcontainer {
+ .header-logo, .navcontainer, .contentcontainer, .section-header {
     margin-bottom: calc(var(--spacing)*4);
  }
 
@@ -220,7 +220,6 @@ h3 a {
 
 .section-header {
     display: inline-block;
-    margin-bottom: calc(var(--spacing)*4);
     margin-left: 0.2em;
 }
 
