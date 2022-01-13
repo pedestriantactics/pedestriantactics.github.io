@@ -266,17 +266,17 @@ h3 a {
     content: "☀";
 }
 
-/*@media (prefers-color-scheme: dark) {*/
-/*    :root {*/
-/*	--color-primary: white;*/
-/*    --color-secondary: black; */
-/*    --color-tertiary: yellow;*/
-/*    }*/
+@media (prefers-color-scheme: dark) {
+    :root {
+	--color-primary: white;
+    --color-secondary: black; 
+    --color-tertiary: yellow;
+    }
 
-/*    .darkmodelabel:after {*/
-/*        content: "☾";*/
-/*    }*/
-/*}*/
+    .darkmodelabel:after {
+        content: "☾";
+    }
+}
 
  /*screen size*/
 
@@ -308,9 +308,9 @@ h3 a {
         margin-right: 0;
         min-width: 100%;
      }
-    /* .darkmodelabel {*/
-    /*    text-align: left;*/
-    /*}*/
+     .darkmodelabel {
+        text-align: left;
+    }
 }
 
 @media screen and (max-width: 520px) {
