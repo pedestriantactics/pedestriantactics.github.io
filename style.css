@@ -298,9 +298,9 @@ h3 a, .pagecontainer .navcolumn-heading {
         flex-direction: column;
         justify-content: space-between;
     }
-    .navcontainer {
-        width: calc(100% + (var(--spacing)*4));
-    }
+    /*.navcontainer {*/
+    /*    width: calc(100% + (var(--spacing)*4));*/
+    /*}*/
     .contentgrid .contentcontainer {
         /*index grid double rows for smallish screens*/
         width: calc(50% - (var(--spacing)*4));
