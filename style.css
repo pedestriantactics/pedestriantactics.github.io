@@ -160,6 +160,7 @@ h4 {
     width: 100%;
     max-width: var(--max-width);
     box-sizing: border-box;
+    background-color: var(--color-secondary);
  }
 
  .contentgrid {
