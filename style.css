@@ -196,7 +196,7 @@ h4 {
     margin-right: calc(var(--spacing) * 1);
 }
 
-h3 a {
+h3 a, .section-header {
     padding: .2em;
     margin-right: calc(var(--spacing) * 1);
 }
