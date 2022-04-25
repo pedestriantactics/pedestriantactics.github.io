@@ -293,7 +293,6 @@ h3 a {
         width: calc(100% + (var(--spacing)*4));
     }
     .contentgrid .contentcontainer {
-        /*index grid double rows for smallish screens*/
         width: calc(50% - (var(--spacing)*2));
      }
     .footercontainer {
@@ -313,7 +312,6 @@ h3 a {
 
 @media screen and (max-width: 520px) {
     .contentgrid .contentcontainer, .pagegrid .contentcontainer {
-        /*index grid single rows for small screens*/
         width: calc(100% - (var(--spacing)*4));
      }
 }
