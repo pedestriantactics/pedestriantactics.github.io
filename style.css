@@ -81,7 +81,7 @@ try horizontal and vertical pictures in the store grid
     --font: "PT-F5 Regular", "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
     --body-size: 14px;
     --line-height-multiplier: 1.4;
-    --h1-size: calc(var(--body-size) * 6);
+    --h1-size: calc(var(--body-size) * 3);
     --h2-size: calc(var(--body-size) * 3);
     --h3-size: calc(var(--body-size) * 1);
     --h4-size: calc(var(--body-size) * 1);
@@ -128,6 +128,7 @@ h1 {
 }
 
 h2 {
+    display: block;
     font-size: var(--h2-size);
     line-height: calc(var(--h2-size) * var(--line-height-multiplier));
 }
