@@ -212,7 +212,7 @@ h3 a {
 h3 a:hover, h3 a.active, .section-header {
     color: var(--color-secondary);
     background-color: var(--color-primary);
-    margin: 2em;
+    padding: .2em;
     /*outline size is in em so it changes with the parent type*/
 }
 
