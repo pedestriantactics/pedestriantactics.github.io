@@ -199,12 +199,6 @@ h4 {
     margin-right: calc(var(--spacing) * 1);
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 h3 a {
     padding: .2em;
 }
