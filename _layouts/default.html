@@ -64,13 +64,9 @@
         <div class="container">
 
             <div class="header">
-                <div class="header-logo">
-                    <a href="/"><h1>PT</h1></a>
-                </div>
+                <a href="/"><h1>PT</h1></a>
                 <div class="navcontainer">
-
                     {% for item in site.data.menu %}
-                        <div class="navcontainer-navcolumn">
 <!--                            <p class="section-header">{{ item:title }}</p>-->
                             {% for entry in item.contents %}
                                 <!--This generates the link URL from a lowercased version of the title if no URL is specified-->
@@ -82,7 +78,6 @@
                                     <h3><a href="/{{ entry.title | downcase }}" class="{% if page.url == entry_title %}active{% endif %}">{{ entry.title }}</a></h3>
                                 {% endif %}
                             {% endfor %}
-                        </div>
                     {% endfor %}
 
                 </div>

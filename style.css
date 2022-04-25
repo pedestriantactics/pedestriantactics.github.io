@@ -146,8 +146,9 @@ h4 {
 }
 
 /*vertical spacing between containers*/
-.header-logo, .navcontainer, .contentcontainer, .section-header {
-    margin-bottom: calc(var(--spacing) * 1);
+h1, .navcontainer, .contentcontainer {
+    display: block;
+    margin-bottom: calc(var(--spacing) * 4);
 }
 
 /*spacing between post elements*/
@@ -204,25 +205,6 @@ h4 {
     justify-content: space-between;
 }
 
-.header-logo {
-    margin-right: calc(var(--spacing) * 3);
-}
-
-.navcontainer {
-    display: flex;
-    flex-direction: row;
-    /*width: calc(33.333% + (var(--spacing)*0));*/
-    margin-left: calc(var(--spacing) * -2);
-    margin-right: calc(var(--spacing) * -2);
-}
-
-.navcontainer-navcolumn {
-    margin-left: calc(var(--spacing) * 2);
-    margin-right: calc(var(--spacing) * 2);
-    width: 100%;
-    min-width: max-content;
-}
-
 h3 a {
     display: inline;
 }
@@ -230,8 +212,7 @@ h3 a {
 h3 a:hover, h3 a.active, .section-header {
     color: var(--color-secondary);
     background-color: var(--color-primary);
-    padding: 0;
-    outline: solid var(--color-primary) 0.2em;
+    margin: 2em;
     /*outline size is in em so it changes with the parent type*/
 }
 
