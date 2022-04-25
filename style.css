@@ -205,10 +205,13 @@ h4 {
     justify-content: space-between;
 }
 
+h3 a {
+    padding: .2em;
+}
+
 h3 a:hover, h3 a.active, .section-header {
     color: var(--color-secondary);
     background-color: var(--color-primary);
-    padding: .2em;
     /*outline size is in em so it changes with the parent type*/
 }
 
