@@ -84,7 +84,7 @@ try horizontal and vertical pictures in the store grid
     --h1-size: calc(var(--body-size) * 3);
     --h2-size: calc(var(--body-size) * 3);
     --h3-size: calc(var(--body-size) * 1);
-    --h4-size: calc(var(--body-size) * 1);
+    --h4-size: calc(var(--body-size) * .8);
     --spacing: calc(var(--body-size) * 1);
     --max-width: calc(960px + calc(var(--spacing) * 4));
     --border-width: 1.5px;
@@ -136,11 +136,6 @@ h2 {
 h3 {
     font-size: var(--h3-size);
     line-height: calc(var(--h3-size) * var(--line-height-multiplier));
-}
-
-h3 a {
-    padding-bottom: 0;
-    margin-right: calc(var(--spacing) * 1);
 }
 
 h4 {
@@ -203,6 +198,7 @@ h4 {
 
 h3 a {
     padding: .2em;
+    margin-right: calc(var(--spacing) * 1);
 }
 
 h3 a:hover, h3 a.active, .section-header {
