@@ -163,7 +163,7 @@ h4 {
     background-color: var(--color-secondary);
  }
 
- .contentgrid {
+ .contentgrid, .pagegrid {
      display: flex;
      flex-wrap: wrap;
      flex-direction: row;
