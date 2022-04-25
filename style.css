@@ -181,6 +181,12 @@ h4 {
     margin-left: calc(var(--spacing)*1);
     margin-right: calc(var(--spacing)*1);
  }
+ 
+ /* the grid for pages being layed out side by side
+     .pagegrid .contentcontainer {
+        /*index grid double rows for smallish screens*/
+        width: calc(50% - (var(--spacing)*2));
+     }
 
  .header {
      display: flex;
@@ -307,7 +313,7 @@ h3 a {
 }
 
 @media screen and (max-width: 520px) {
-    .contentgrid .contentcontainer {
+    .contentgrid .contentcontainer, .pagegrid .contentcontainer {
         /*index grid single rows for small screens*/
         width: calc(100% - (var(--spacing)*4));
      }
