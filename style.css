@@ -79,11 +79,11 @@ try horizontal and vertical pictures in the store grid
     --color-secondary: white;
     --color-tertiary: blue;
     --font: "PT-F5 Regular", "Helvetica Neue Medium", Helvetica, Arial, sans-serif;
-    --body-size: 10px;
+    --body-size: 14px;
     --line-height-multiplier: 1.4;
     --h1-size: calc(var(--body-size) * 8);
     --h2-size: calc(var(--body-size) * 3);
-    --h3-size: calc(var(--body-size) * 1.5);
+    --h3-size: calc(var(--body-size) * 1);
     --h4-size: calc(var(--body-size) * 1);
     --spacing: calc(var(--body-size) * 1);
     --max-width: calc(960px + calc(var(--spacing) * 4));
