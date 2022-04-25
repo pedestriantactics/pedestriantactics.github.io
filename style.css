@@ -112,6 +112,7 @@ a img, a img:hover,
 .post-link, .post-link:hover, h1 a, h1 a:hover,
 h3 a, h3 a:hover {
     border: none;
+    text-decoration: none;
 }
 
 body {
