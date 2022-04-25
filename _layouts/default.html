@@ -67,17 +67,19 @@
                 <h1><a href="/">PT</a></h1>
                 <div class="navcontainer">
                     {% for item in site.data.menu %}
+                    <h3>
 <!--                            <p class="section-header">{{ item:title }}</p>-->
                             {% for entry in item.contents %}
                                 <!--This generates the link URL from a lowercased version of the title if no URL is specified-->
                                 {% if entry.url %}
                                     {% assign entry_url = entry.url | downcase | prepend: "/" %}
-                                    <h3><a href="{{ entry.url }}" class="{% if page.url == entry_url %}active{% endif %}">{{ entry.title }}</a></h3>
+                                    <a href="{{ entry.url }}" class="{% if page.url == entry_url %}active{% endif %}">{{ entry.title }}</a>
                                 {% else %}
                                     {% assign entry_title = entry.title | downcase | prepend: "/" %}
-                                    <h3><a href="/{{ entry.title | downcase }}" class="{% if page.url == entry_title %}active{% endif %}">{{ entry.title }}</a></h3>
+                                    <a href="/{{ entry.title | downcase }}" class="{% if page.url == entry_title %}active{% endif %}">{{ entry.title }}</a>
                                 {% endif %}
                             {% endfor %}
+                    </h3>
                     {% endfor %}
 
                 </div>
