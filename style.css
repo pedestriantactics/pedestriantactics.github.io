@@ -120,6 +120,7 @@ body {
 }
 
 h1 {
+    display: block;
     font-size: var(--h1-size);
     line-height: calc(var(--h1-size) * var(--line-height-multiplier));
     margin-bottom: calc(var(--spacing) * 1);
@@ -146,8 +147,7 @@ h4 {
 }
 
 /*vertical spacing between containers*/
-h1, .navcontainer, .contentcontainer {
-    display: block;
+.navcontainer, .contentcontainer {
     margin-bottom: calc(var(--spacing) * 4);
 }
 
@@ -205,19 +205,11 @@ h1, .navcontainer, .contentcontainer {
     justify-content: space-between;
 }
 
-h3 a {
-    display: inline;
-}
-
 h3 a:hover, h3 a.active, .section-header {
     color: var(--color-secondary);
     background-color: var(--color-primary);
     padding: .2em;
     /*outline size is in em so it changes with the parent type*/
-}
-
-.section-header {
-    display: inline-block;
 }
 
 /*footer*/
