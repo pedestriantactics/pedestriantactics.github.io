@@ -13,7 +13,7 @@
 #  - title: PT-A7
 #  - title: PT-T23
 
-- title: Links
+- title: External
   contents:
     - title: Facebook
       url: https://www.facebook.com/pedestriantactics
@@ -29,6 +29,9 @@
       url: https://www.youtube.com/pedestriantactics
     - title: Patreon
       url: https://www.patreon.com/pedestriantactics
+
+- title: Internal
+  contents:
     - title: Subscribe
       url: subscribe
     - title: Press
