@@ -94,7 +94,7 @@ try horizontal and vertical pictures in the store grid
 
 /*text*/
 
-html, body, p, a, h1, h2, h3 {
+html, body, p, a, h1, h1 a, h2, h3, h3 a {
     font-family: var(--font);
     color: var(--color-primary);
     background-color: var(--color-secondary);
@@ -105,7 +105,6 @@ html, body, p, a, h1, h2, h3 {
 a, a:hover {
     padding-bottom: calc(var(--spacing) * 0.3);
     border-bottom: solid var(--color-primary) var(--border-width);
-    display: inline;
 }
 
 a img, a img:hover,
@@ -197,6 +196,7 @@ h4 {
 }
 
 h3 a, .section-header {
+    display: inline-block;
     padding: .2em;
     margin-right: calc(var(--spacing) * 1);
 }
@@ -204,7 +204,6 @@ h3 a, .section-header {
 h3 a:hover, h3 a.active, .section-header {
     color: var(--color-secondary);
     background-color: var(--color-primary);
-    display: inline-block;
     /*outline size is in em so it changes with the parent type*/
 }
 
