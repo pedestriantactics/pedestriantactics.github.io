@@ -276,10 +276,6 @@ h3 a:hover, h3 a.active, .section-header {
         /*this addresses the title bleeding over on an iphone 5*/
     }
 
-    .navcontainer {
-        width: calc(100% + (var(--spacing) * 4));
-    }
-
     .contentgrid .contentcontainer {
         width: calc(50% - (var(--spacing) * 2));
     }
