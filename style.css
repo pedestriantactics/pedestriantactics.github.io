@@ -147,7 +147,7 @@ h4 {
 
 /*vertical spacing between containers*/
 .header-logo, .navcontainer, .contentcontainer, .section-header {
-    margin-bottom: calc(var(--spacing) * 4);
+    margin-bottom: calc(var(--spacing) * 1);
 }
 
 /*spacing between post elements*/
@@ -237,7 +237,6 @@ h3 a:hover, h3 a.active, .section-header {
 
 .section-header {
     display: inline-block;
-    margin-left: 0.2em;
 }
 
 /*footer*/
