@@ -3,10 +3,11 @@ layout: default
 ---
 
 <div class="pagegrid">
-<div class="contentcontainer">
-<img src="{{ page.image }}" alt="{{ page.title }} artwork">
-</div>
-<div class="contentcontainer">
-{{ content }}
-</div>
+    <div class="contentcontainer">
+        <img src="{{ page.image }}" alt="{{ page.title }} artwork">
+    </div>
+    <div class="contentcontainer">
+        <h3 class="section-header">{% if page.title %}{{ page.title }}{% elsif page:date %}{{ page.date | date: "%-m/%-d/%Y" }}{% else %}{{ page:name }}{% endif %}</h3>
+        {{ content }}
+    </div>
 </div>

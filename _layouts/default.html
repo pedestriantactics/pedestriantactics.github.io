@@ -89,8 +89,6 @@
             </div>
 
             <div class="pagecontainer">
-                    <!--If a page title isn't specified, this defaults to the page date, and then the file name-->
-                    <h3 class="section-header">{% if page.title %}{{ page.title }}{% elsif page:date %}{{ page.date | date: "%-m/%-d/%Y" }}{% else %}{{ page:name }}{% endif %}</h3>
                     {{ content }}
             </div>
 
