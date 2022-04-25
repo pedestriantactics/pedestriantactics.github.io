@@ -184,7 +184,6 @@ h4 {
  
  /* the grid for pages being layed out side by side */
      .pagegrid .contentcontainer {
-        /*index grid double rows for smallish screens*/
         width: calc(50% - (var(--spacing)*2));
      }
 
