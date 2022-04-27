@@ -262,11 +262,6 @@ h3 a:hover, h3 a.active, .section-header {
         line-height: calc((var(--h1-size) * 0.5) * var(--line-height-multiplier));
         /*this addresses the title bleeding over on an iphone 5*/
     }
-    
-    h1.after
-    {
-            content: "PT";
-    } 
 
     .contentgrid .contentcontainer {
         width: calc(50% - (var(--spacing) * 2));
