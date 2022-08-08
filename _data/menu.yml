@@ -19,6 +19,8 @@
       url: https://www.facebook.com/pedestriantactics
     - title: Twitter
       url: https://twitter.com/pedestriantac
+    - title: Spotify
+      url: https://open.spotify.com/artist/6TFOalvhHRXh8JmQTVSoyY?si=61IQ986GQFCynomyS9dhjw
     - title: Soundcloud
       url: https://soundcloud.com/pedestriantactics
     - title: Bandcamp
@@ -35,5 +37,7 @@
     - title: Subscribe
       url: subscribe
     - title: Press
+    - title: Mind Palace
+      url: https://www.airbnb.com/h/mindpalace
     - title: Book a session
-      url: https://producerdj.appointlet.com/s/1-hour-session-with-pedestrian-tactics/pedestrian-tactics
+      url: session
