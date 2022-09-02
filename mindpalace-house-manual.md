@@ -10,7 +10,7 @@ Pedestrian Tactics
 4253875675
 
 ## Speakers
-The speakers can be powered on using the switches on the back of each speaker. Turn the mixer on using the power button (there’s a diagram in the check-in instructions). You can then connect to the speakers using Bluetooth. The name is Pedestrian Tactics. If you would like to use audio from the TV or from an audio jack, swap the input to the mixer with the aux cord that’s connected to the tv.
+The speakers can be powered on using the switches on the back of each speaker. Turn the mixer on using the power button (there’s a diagram in the check-in instructions). You can then connect to the speakers using Bluetooth. The name is Pedestrian Tactics (it may also show up as Logitech BT Adapter). If you would like to use audio from the TV or from an audio jack, swap the input to the mixer with the aux cord that’s connected to the tv.
 
 ## TV
 I have included an HDMI cord with an adapter for USB-C devices. There’s also a dock for a Nintendo Switch if you brought yours 😉
