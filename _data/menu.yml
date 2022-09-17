@@ -15,8 +15,6 @@
 
 - title: External
   contents:
-    - title: Facebook
-      url: https://www.facebook.com/pedestriantactics
     - title: Twitter
       url: https://twitter.com/pedestriantac
     - title: Spotify
@@ -31,12 +29,15 @@
       url: https://www.youtube.com/pedestriantactics
     - title: Patreon
       url: https://www.patreon.com/pedestriantactics
+    - title: Newsletter
+      url: subscribe
+      
 
 - title: Internal
   contents:
-    - title: Subscribe
-      url: subscribe
     - title: Press
+    - title: Inquiries
+      url: mailto:pedestriantactics@gmail.com
     - title: Mind Palace
       url: https://www.airbnb.com/h/mindpalace
     - title: Book a session
