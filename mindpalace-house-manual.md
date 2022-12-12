@@ -1,6 +1,8 @@
 # Hi
 Thanks for choosing the Mind Palace. I built this space to maximize productivity and leisure with a minimal footprint. This is my first AirBnb listing so I welcome your thoughts during your stay. 
 
+Please refer to the check-in instructions on AirBnb for the lockbox location and code.
+
 Please keep shoes at the door.
 
 There is a spare key in the cupboard up to the right of the stove if you need one. 
