@@ -28,6 +28,6 @@ PLEASE check the stove to make sure all the knobs are off. It’s very easy to a
 
 If you used the spare key, please leave it back in the upper cupboard to the right of the stove.
 
-Return the key in the lockbox and scramble it! Again the code is 5675.
+Return the key in the lockbox and scramble it!
 
 I’m on IG @pedestriantactics! Feel free to send me any fun photos during your stay!
