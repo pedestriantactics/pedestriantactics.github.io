@@ -8,4 +8,4 @@ redirect_from: "/post/silence-sample-pack"
 
 It's been months of planning and production, and it's finally time for Silence, an audio sample pack designed for modern electronic musicians. The sample pack along with a PDF booklet is available for download now.
 
-### [Free download](https://gumroad.com/l/pt-si/ptfree)
+### [Free on Gumroad!](https://gumroad.com/l/pt-si/ptfree)
