@@ -1,0 +1,27 @@
+@import "https://fonts.googleapis.com/css?family=Permanent+Marker";
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+
+:root {
+    /* color of the whole page */
+    --color-background: #ff0044;
+    /* color of text elements */
+    --color-foreground:white;
+}
+
+/* this is the text for links */
+body {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 16pt;
+}
+
+/* this is the style for the links */
+.menu-link {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+/* this is the title text */
+#title-text {
+    font-family: 'Permanent Marker', Helvetica, Arial, sans-serif;
+    font-weight: medium;
+}

@@ -1,15 +1,58 @@
 ---
-layout: default
-title: Index
+title: {{site.data.user-config.title}}
+layout: base
 ---
 
-<div class="contentgrid">
-    {% for post in site.posts %}
-    <div class="contentcontainer">
-        <a class="post-link" href="{{ post.url }}">
-            <img src="{{ post.image }}">
-            <h4>{{ post.title }}</h4>
-        </a>
+<div id="index-container">
+    <div id="title-container">
+        <h1 id="title-text">{{site.data.user-config.title}}</h1>
     </div>
-    {% endfor %}
+        <div id="menu-links">
+            {% for item in site.data.user-config.links %}
+        <a class="menu-link" href={{item.url}}>{{item.title}}</a>
+        {% endfor %}
+    </div>
+    <script src="/fitty.min.js"></script>
+    <script>
+        fitty('#title-text', {
+            minSize: 12,
+            maxSize: 300,
+        });
+    </script>
 </div>
+
+<style>
+    /* make the contents arrange themselves horizontally with 2rem space in between */
+    #menu-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #index-container {
+        width: 80%;
+    }
+
+    #title-container {
+        margin-bottom: 1rem;
+    }
+
+    #title-text {
+        margin-bottom: .3em;
+    }
+
+    #menu-links a {
+        margin: 0 1rem;
+    }
+
+    /* add a media query at 600px that stacks the links in the links div vertically */
+    @media (max-width: 600px) {
+        #menu-links {
+            flex-direction: column;
+        }
+        #menu-links a {
+            margin: 1rem 0;
+        }
+    }
+</style>

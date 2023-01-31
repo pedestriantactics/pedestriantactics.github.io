@@ -1,0 +1,19 @@
+# this will be used on the front page of the site and as the title of the site tab
+title: Test Artist
+# whether to show the title on the front page
+show-title: true
+# if the image will be above or below the title
+image-above-title: true
+# this shows up below the title in a google search result
+description: This is an example of the description
+# these will be on the main page, you can add or remove as many as you want
+links:
+
+- title: Spotify
+  url: http://spotify.com
+
+- title: Youtube
+  url: http://youtube.com
+
+- title: User page
+  url: user-custom-page

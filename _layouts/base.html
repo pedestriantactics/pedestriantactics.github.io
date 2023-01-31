@@ -1,0 +1,38 @@
+<head>
+    <title>{{page.title}}</title>
+    <meta title=”description” content={{site.data.user-config.description}}>
+    <link rel="icon" type="image/png" href="/user-favicon.png">
+</head>
+
+<body>
+    <div id="container">
+        {{content}}
+    </div>
+</body>
+
+<style>
+    @import "/reset.css";
+    @import "/user-styles.css";
+
+    :root {
+        background-color: var(--color-background);
+        color: var(--color-foreground);
+        text-align: center;
+    }
+
+    a,
+    a:hover,
+    a:visited,
+    a:active,
+    a:focus {
+        color: var(--color-foreground);
+        text-decoration: none;
+    }
+
+    /* align everything inside the container div in a grid vertically and horizontally centered */
+    #container {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
+</style>

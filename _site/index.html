@@ -1,299 +1,94 @@
-<!--
-    PT Notes:
+<head>
+    <title>{}</title>
+    <meta title=”description” content=This is an example of the description>
+    <link rel="icon" type="image/png" href="/user-favicon.png">
+</head>
 
-    How :title works in Jekyll
-        If a title isn't specified for an HTML, nothing is generated. 
-        If it isn't specified for a markdown file, 
-        a title is automatically generated from the file name and 
-        capitalized properly with dashes turned to spaces.
--->
-
-<html>
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-            <!--SITE META-->
-
-            <!--If the current page doesn't have a title, the file name is used-->
-            <title>Pedestrian Tactics - Index</title>
-            <meta title=”description” content="The experimental music and multimedia project previously known as Corporate.">
-
-            <!--Open Graph Meta-->
-            <meta property="og:title" content="Pedestrian Tactics" />
-            <meta property="og:type" content="music" />
-            <meta property="og:image" content="images/pt-a9-system-cover-art.jpg" />
-
-            <!--Twitter meta-->
-            <meta name="twitter:title" content="Pedestrian Tactics">
-            <meta name="twitter:card" content="apple-touch-icon.png">
-            <meta name="twitter:site" content="@pedestriantac">
-            <meta name="twitter:creator" content="@pedestriantac">
-            <meta name="twitter:image" content="/images/pt-a9-system-cover-art.jpg">
-            <meta name="twitter:description" content="The experimental music and multimedia project previously known as Corporate.">
-
-            <!--
-                Favicons and code below have been generated from:
-                https://favicon.io/
-            -->
-
-            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-            <link rel="manifest" href="/site.webmanifest">
-
-            <!--/SITE META-->
-
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146651134-1"></script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'UA-146651134-1');
-            </script>
-
-            <!--Gum Road embed code-->
-            <script src="https://gumroad.com/js/gumroad-embed.js"></script>
-
-            <link rel="stylesheet" href="/style.css">
-
-        </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <h1><a href="/">PT</a></h1>
-                <div class="navcontainer">
-                    
-                    <h3>
-<!--                            <p class="section-header">External</p>-->
-                            
-                                <!--This generates the link URL from a lowercased version of the title if no URL is specified-->
-                                
-                                    
-                                    <a href="https://twitter.com/pedestriantac" class="">Twitter</a>
-                                
-                            
-                                <!--This generates the link URL from a lowercased version of the title if no URL is specified-->
-                                
-                                    
-                                    <a href="https://open.spotify.com/artist/6TFOalvhHRXh8JmQTVSoyY?si=61IQ986GQFCynomyS9dhjw" class="">Spotify</a>
-                                
-                            
-                                <!--This generates the link URL from a lowercased version of the title if no URL is specified-->
-                                
-                                    
-                                    <a href="https://soundcloud.com/pedestriantactics" class="">Soundcloud</a>
-                                
-                            
-                                <!--This generates the link URL from a lowercased version of the title if no URL is specified-->
-                                
-                                    
-                                    <a href="https://pedestriantactics.bandcamp.com" class="">Bandcamp</a>
-                                
-                            
-                                <!--This generates the link URL from a lowercased version of the title if no URL is specified-->
-                                
-                                    
-                                    <a href="https://www.instagram.com/pedestriantactics" class="">Instagram</a>
-                                
-                            
-                                <!--This generates the link URL from a lowercased version of the title if no URL is specified-->
-                                
-                                    
-                                    <a href="https://www.youtube.com/pedestriantactics" class="">YouTube</a>
-                                
-                            
-                                <!--This generates the link URL from a lowercased version of the title if no URL is specified-->
-                                
-                                    
-                                    <a href="https://www.patreon.com/pedestriantactics" class="">Patreon</a>
-                                
-                            
-                                <!--This generates the link URL from a lowercased version of the title if no URL is specified-->
-                                
-                                    
-                                    <a href="subscribe" class="">Newsletter</a>
-                                
-                            
-                    </h3>
-                    
-                    <h3>
-<!--                            <p class="section-header">Internal</p>-->
-                            
-                                <!--This generates the link URL from a lowercased version of the title if no URL is specified-->
-                                
-                                    
-                                    <a href="/press" class="">Press</a>
-                                
-                            
-                                <!--This generates the link URL from a lowercased version of the title if no URL is specified-->
-                                
-                                    
-                                    <a href="mailto:hi@pedestriantactics.com" class="">Inquiries</a>
-                                
-                            
-                                <!--This generates the link URL from a lowercased version of the title if no URL is specified-->
-                                
-                                    
-                                    <a href="https://www.airbnb.com/h/mindpalace" class="">Mind Palace</a>
-                                
-                            
-                                <!--This generates the link URL from a lowercased version of the title if no URL is specified-->
-                                
-                                    
-                                    <a href="session" class="">Book a session</a>
-                                
-                            
-                    </h3>
-                    
-                </div>
-            </div>
-
-            <div class="pagecontainer">
-                    <div class="contentgrid">
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/pt-t62">
-            <img src="images/pt-t62-animation.gif">
-            <h4>PT-T62</h4>
-        </a>
+<body>
+    <div id="container">
+        <div id="index-container">
+    <div id="title-container">
+        <h1 id="title-text">Test Artist</h1>
     </div>
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/pt-dlc4">
-            <img src="images/pt-dlc4-every-drum-ive-ever-made-sample-pack-cover-art.jpeg">
-            <h4>PT-DLC4</h4>
-        </a>
+        <div id="menu-links">
+            
+        <a class="menu-link" href=http://spotify.com>Spotify</a>
+        
+        <a class="menu-link" href=http://youtube.com>Youtube</a>
+        
+        <a class="menu-link" href=user-custom-page>User page</a>
+        
     </div>
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/pt-dlc4-2">
-            <img src="images/pt-dlc4-2-every-kick-ive-ever-made-sample-pack-cover-art.jpeg">
-            <h4>PT-DLC4-2</h4>
-        </a>
-    </div>
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/pt-dlc4-1">
-            <img src="images/pt-dlc4-1-every-snare-ive-ever-made-sample-pack-cover-art.jpeg">
-            <h4>PT-DLC4-1</h4>
-        </a>
-    </div>
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/pt-dlc3">
-            <img src="images/pt-dlc3-corporate-ice-sample-pack-cover-art.jpg">
-            <h4>PT-DLC3</h4>
-        </a>
-    </div>
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/pt-dlc2">
-            <img src="images/how-i-made-nttd-cover.jpeg">
-            <h4>PT-DLC2</h4>
-        </a>
-    </div>
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/pt-t58">
-            <img src="images/pt-t58-the-accident-cover-art.jpg">
-            <h4>PT-T58</h4>
-        </a>
-    </div>
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/2020-remixes">
-            <img src="images/2020-remixes-cover.jpg">
-            <h4>2020-Remixes</h4>
-        </a>
-    </div>
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/pt-a10">
-            <img src="images/pt-a10-nerds-trying-to-dance-cover-art.jpg">
-            <h4>PT-A10</h4>
-        </a>
-    </div>
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/2019-remixes">
-            <img src="images/2019-remixes-cover.jpg">
-            <h4>2019-Remixes</h4>
-        </a>
-    </div>
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/pt-a9">
-            <img src="images/pt-a9-system-cover-art.jpg">
-            <h4>PT-A9</h4>
-        </a>
-    </div>
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/pt-t41">
-            <img src="images/pt-t41-trump-memes-cover-art.jpg">
-            <h4>PT-T41</h4>
-        </a>
-    </div>
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/pt-t42">
-            <img src="images/pt-t42-mind-palace-cover-art.jpg">
-            <h4>PT-T42</h4>
-        </a>
-    </div>
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/pt-a8">
-            <img src="images/pt-a8-fishtank-sessions-cover-art.jpg">
-            <h4>PT-A8</h4>
-        </a>
-    </div>
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/silence-sample-pack">
-            <img src="images/silence-sample-pack-booklet-1.jpg">
-            <h4>Silence Sample Pack</h4>
-        </a>
-    </div>
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/pt-a7">
-            <img src="images/pt-a7-in-transit-cover-art.jpg">
-            <h4>PT-A7</h4>
-        </a>
-    </div>
-    
-    <div class="contentcontainer">
-        <a class="post-link" href="/pt-t23">
-            <img src="images/pt-t23-come-with-me-cover-art.jpg">
-            <h4>PT-T23</h4>
-        </a>
-    </div>
-    
+    <script src="/fitty.min.js"></script>
+    <script>
+        fitty('#title-text', {
+            minSize: 12,
+            maxSize: 300,
+        });
+    </script>
 </div>
-            </div>
 
-            <div class="footerborder"></div>
+<style>
+    /* make the contents arrange themselves horizontally with 2rem space in between */
+    #menu-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
 
-            <div class="footercontainer">
+    #index-container {
+        width: 80%;
+    }
 
-                <div class="footercolumn">
-                    <h4>Assembled in various coffee shops and empty rooms by Pedestrian Tactics, 2022</h4>
-                </div>
+    #title-container {
+        margin-bottom: 1rem;
+    }
 
-                <div class="footercolumn">
-                    <a href="/privacy-policy"><h4>Privacy Policy</h4></a>
-                </div>
+    #title-text {
+        margin-bottom: .3em;
+    }
 
-                <div class="footercolumn">
-                    <h4 class="darkmodelabel"></h4>
-                </div>
+    #menu-links a {
+        margin: 0 1rem;
+    }
 
-            </div>
+    /* add a media query at 600px that stacks the links in the links div vertically */
+    @media (max-width: 600px) {
+        #menu-links {
+            flex-direction: column;
+        }
+        #menu-links a {
+            margin: 1rem 0;
+        }
+    }
+</style>
+    </div>
+</body>
 
-        </div>
-    </body>
-</html>
+<style>
+    @import "/reset.css";
+    @import "/user-styles.css";
+
+    :root {
+        background-color: var(--color-background);
+        color: var(--color-foreground);
+        text-align: center;
+    }
+
+    a,
+    a:hover,
+    a:visited,
+    a:active,
+    a:focus {
+        color: var(--color-foreground);
+        text-decoration: none;
+    }
+
+    /* align everything inside the container div in a grid vertically and horizontally centered */
+    #container {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
+</style>

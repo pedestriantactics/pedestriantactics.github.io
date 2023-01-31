@@ -1,6 +1,22 @@
 ---
-layout: default
+layout: base
 ---
-<div class="contentcontainer">
-{{ content }}
+
+<div id="back-button">
+<a href="../">&lt;</a>
 </div>
+<div>
+{{content}}
+</div>
+<style>
+    /* make the back button fixed at the middle left with a width of 4em */
+    #back-button {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        display: grid;
+        align-items: center;
+        width: 4em;
+    }
+</style>
