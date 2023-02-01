@@ -3,16 +3,20 @@
 
 :root {
     /* color of the whole page */
-    --color-background: #ff0033;
+    --color-background: darkslategray;
     /* color of text elements */
-    --color-foreground:white;
+    --color-foreground: white;
 }
 
 /* these are settings for all text unless otherwise specified */
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 500;
-    font-size: 12px;
+}
+
+/* this is the style for the intro text */
+#intro-text p {
+    font-size: 32pt;
 }
 
 /* this will show up on custom pages */
@@ -22,9 +26,14 @@ body {
 
 /* this is the style for the links */
 .menu-link {
-    text-transform: uppercase;
     letter-spacing: .1em;
     font-size: 16pt;
+    text-transform: uppercase;
+}
+
+/* setting this to a pixel value will cap the width of the title and images */
+#title-container {
+    width: 100%;
 }
 
 /* this is the title text */

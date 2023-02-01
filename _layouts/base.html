@@ -6,7 +6,7 @@
 
 <body>
     {% if site.data.user-config.show-background-image == true %}
-        <div id="bg"></div>
+    <div id="bg"></div>
     {% endif %}
     <div id="container">
         {{content}}
@@ -18,14 +18,19 @@
     @import "/user-styles.css";
 
     :root {
+        --spacer: 3rem;
         background-color: var(--color-background);
         color: var(--color-foreground);
         text-align: center;
     }
 
+    body {
+        font-size: 12px;
+    }
+
     #bg {
         position: fixed;
-        z-index:-1;
+        z-index: -1;
         top: 0;
         bottom: 0;
         left: 0;
@@ -50,15 +55,21 @@
 
     img {
         width: 100%;
-        margin-bottom: 3rem;
+        margin-bottom: var(--spacer);
     }
 
     /* align everything inside the container div in a grid vertically and horizontally centered */
     #container {
-        margin: 3rem;
+        margin: var(--spacer);
         display: grid;
         place-items: center;
-        height: calc(100vh - 6rem);
-        width: calc(100vw - 6rem);
+        height: calc(100vh - calc(var(--spacer) * 2));
+        width: calc(100vw - calc(var(--spacer) * 2));
+    }
+
+    @media screen and (max-width: 600px) {
+        :root {
+            --spacer: .3rem;
+        }
     }
 </style>

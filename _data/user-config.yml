@@ -1,22 +1,38 @@
 # this will be used on the front page of the site and as the title of the site tab
 title: Test Artist
-# whether to show the title on the front page
-show-title: true
-# whether to show the image (user-image.png)
-show-image: false
-# if the image will be above or below the title
-image-above-title: false
-# whether to show the background (user-background.png)
-show-background-image: false
 # this shows up below the title in a google search result
 description: This is an example of the description
+# whether to show the title on the front page
+show-title: true
+# this is a convenient shortcut to hide the intro text which can be changed in user-intro-text.md
+show-intro-text: false
+# in case you want to hide the links for some reason
+show-links: true
+# the links are arranged horizontally except on mobile, this forces them to be vertical
+vertical-links: true
+# whether to show the background (user-background.png)
+show-background-image: false
+# this is just a convenient switch to hide all the images without having to delete the text below
+show-images: false
+# whether to put the images above or below the intro text
+images-above-intro-text: true
+# if you would like to show images on the main page put them in the user-images folder and then include them here
+# the alt is what will show when you hover over the image with a cursor
+images:
+
+- alt: Logo
+  url: pt-handwritten-white.png
+
+- alt: Bio photo
+  url: pt-bio-photo.png
+
 # these will be on the main page, you can add or remove as many as you want
 links:
 
 - title: Spotify
   url: http://spotify.com
 
-- title: Youtube
+- title: YouTube
   url: http://youtube.com
 
 - title: Custom page

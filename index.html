@@ -3,30 +3,47 @@ layout: base
 ---
 
 <div id="index-container">
-    {% for image in site.static_files %}
-    {% if image.path contains 'images/slider' %}
-    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-    {% endif %}
-    {% endfor %}
     <div id="title-container">
-
-        {% if site.data.user-config.show-image == true and site.data.user-config.image-above-title == true %}
-        <img id="title-image" src="user-image.png" alt="{{ site.data.user-config.title }}">
-        {% endif %}
-
-        {% if site.data.user-config.show-title %}
+        {% if site.data.user-config.show-title == true %}
         <h1 id="title-text">{{site.data.user-config.title}}</h1>
         {% endif %}
 
-        {% if site.data.user-config.show-image == true and site.data.user-config.image-above-title == false %}
-        <img id="title-image" src="user-image.png" alt="{{ site.data.user-config.title }}">
+        <!-- images above intro text -->
+        {% if site.data.user-config.show-images == true and site.data.user-config.images-above-intro-text == true %}
+        {% for image in site.data.user-config.images %}
+        <img class="title-image" src="/user-images/{{image.url}}" alt="{{image.alt}}">
+        {% endfor %}
+        {% endif %}
+
+        {% capture my_include %}{% include_relative user-intro-text.md %}{% endcapture %}
+        {% if my_include != "" and site.data.user-config.show-intro-text == true %}
+        <div id="intro-text">
+            {{ my_include | markdownify }}
+        </div>
+        {% endif %}
+
+        <!-- images below intro text -->
+        {% if site.data.user-config.show-images == true and site.data.user-config.images-above-intro-text == false %}
+        {% for image in site.data.user-config.images %}
+        <img class="title-image" src="/user-images/{{image.url}}" alt="{{image.alt}}">
+        {% endfor %}
         {% endif %}
     </div>
+    {% if site.data.user-config.show-links == true %}
+    {% if site.data.user-config.vertical-links == false %}
     <div id="menu-links">
         {% for item in site.data.user-config.links %}
         <a class="menu-link" href={{item.url}}>{{item.title}}</a>
         {% endfor %}
     </div>
+    {% else %}
+    <div id="menu-links-vertical">
+        {% for item in site.data.user-config.links %}
+        <a class="menu-link" href={{item.url}}>{{item.title}}</a>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endif %}
     <script src="/fitty.min.js"></script>
     <script>
         fitty('#title-text', {
@@ -45,8 +62,28 @@ layout: base
         width: 100%;
     }
 
+    #menu-links-vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #menu-links a {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    #menu-links-vertical a {
+        margin-bottom: 1em;
+    }
+
     #index-container {
         width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: var(--spacer);
     }
 
     #title-container {
@@ -61,8 +98,12 @@ layout: base
     #menu-links a:visited,
     #menu-links a:active,
     #menu-links a:focus,
-    #menu-links a:hover {
-        margin: 0 1em;
+    #menu-links a:hover,
+    #menu-links-vertical a,
+    #menu-links-vertical a:visited,
+    #menu-links-vertical a:active,
+    #menu-links-vertical a:focus,
+    #menu-links-vertical a:hover {
         text-decoration: none;
     }
 
@@ -73,7 +114,7 @@ layout: base
         }
 
         #menu-links a {
-            margin: 1em 0;
+            margin-bottom: 1em;
         }
     }
 </style>
