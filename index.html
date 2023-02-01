@@ -1,14 +1,29 @@
 ---
-title: {{site.data.user-config.title}}
 layout: base
 ---
 
 <div id="index-container">
+    {% for image in site.static_files %}
+    {% if image.path contains 'images/slider' %}
+    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+    {% endif %}
+    {% endfor %}
     <div id="title-container">
+
+        {% if site.data.user-config.show-image == true and site.data.user-config.image-above-title == true %}
+        <img id="title-image" src="user-image.png" alt="{{ site.data.user-config.title }}">
+        {% endif %}
+
+        {% if site.data.user-config.show-title %}
         <h1 id="title-text">{{site.data.user-config.title}}</h1>
+        {% endif %}
+
+        {% if site.data.user-config.show-image == true and site.data.user-config.image-above-title == false %}
+        <img id="title-image" src="user-image.png" alt="{{ site.data.user-config.title }}">
+        {% endif %}
     </div>
-        <div id="menu-links">
-            {% for item in site.data.user-config.links %}
+    <div id="menu-links">
+        {% for item in site.data.user-config.links %}
         <a class="menu-link" href={{item.url}}>{{item.title}}</a>
         {% endfor %}
     </div>
@@ -31,7 +46,7 @@ layout: base
     }
 
     #index-container {
-        width: 80%;
+        width: 90%;
     }
 
     #title-container {
@@ -42,8 +57,13 @@ layout: base
         margin-bottom: .3em;
     }
 
-    #menu-links a {
-        margin: 0 1rem;
+    #menu-links a,
+    #menu-links a:visited,
+    #menu-links a:active,
+    #menu-links a:focus,
+    #menu-links a:hover {
+        margin: 0 1em;
+        text-decoration: none;
     }
 
     /* add a media query at 600px that stacks the links in the links div vertically */
@@ -51,8 +71,9 @@ layout: base
         #menu-links {
             flex-direction: column;
         }
+
         #menu-links a {
-            margin: 1rem 0;
+            margin: 1em 0;
         }
     }
 </style>

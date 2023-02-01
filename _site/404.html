@@ -1,19 +1,27 @@
 <head>
-    <title>404</title>
+    <title>404 - Test Artist</title>
     <meta title=”description” content=This is an example of the description>
     <link rel="icon" type="image/png" href="/user-favicon.png">
 </head>
 
 <body>
+    
     <div id="container">
-        <div id="back-button">
-<a href="../">&lt;</a>
-</div>
-<div>
-<p>There wasn’t anything found here</p>
+        <div id="custom-page-container" class="custom-page-text">
+    <p>404 yo!</p>
 
+<p>There’s nothing here</p>
+
+    <div id="back-button" class="custom-page-text">
+        <a href="../">&lt;</a>
+    </div>
 </div>
 <style>
+    /* make custom page container take 80% width */
+    #custom-page-container {
+        width: 80%;
+    }
+
     /* make the back button fixed at the middle left with a width of 4em */
     #back-button {
         position: fixed;
@@ -23,6 +31,19 @@
         display: grid;
         align-items: center;
         width: 4em;
+    }
+
+    #back-button a {
+        text-decoration: none;
+    }
+
+    /* make the back button on the bottom and full width on mobile */
+    @media screen and (max-width: 600px) {
+        #back-button {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
     }
 </style>
     </div>
@@ -38,19 +59,42 @@
         text-align: center;
     }
 
+    #bg {
+        position: fixed;
+        z-index:-1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url("user-background.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    p {
+        margin-bottom: .8em;
+    }
+
     a,
     a:hover,
     a:visited,
     a:active,
     a:focus {
         color: var(--color-foreground);
-        text-decoration: none;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 3rem;
     }
 
     /* align everything inside the container div in a grid vertically and horizontally centered */
     #container {
+        margin: 3rem;
         display: grid;
         place-items: center;
-        height: 100vh;
+        height: calc(100vh - 6rem);
+        width: calc(100vw - 6rem);
     }
 </style>

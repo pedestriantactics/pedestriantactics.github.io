@@ -3,21 +3,28 @@
 
 :root {
     /* color of the whole page */
-    --color-background: #ff0044;
+    --color-background: #ff0033;
     /* color of text elements */
     --color-foreground:white;
 }
 
-/* this is the text for links */
+/* these are settings for all text unless otherwise specified */
 body {
-    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    font-size: 16pt;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* this will show up on custom pages */
+.custom-page-text {
+    font-size: 32pt;
 }
 
 /* this is the style for the links */
 .menu-link {
     text-transform: uppercase;
     letter-spacing: .1em;
+    font-size: 16pt;
 }
 
 /* this is the title text */

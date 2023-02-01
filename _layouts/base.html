@@ -1,10 +1,13 @@
 <head>
-    <title>{{page.title}}</title>
+    <title>{%if page.title %}{{page.title}} - {% endif %}{{site.data.user-config.title}}</title>
     <meta title=”description” content={{site.data.user-config.description}}>
     <link rel="icon" type="image/png" href="/user-favicon.png">
 </head>
 
 <body>
+    {% if site.data.user-config.show-background-image == true %}
+        <div id="bg"></div>
+    {% endif %}
     <div id="container">
         {{content}}
     </div>
@@ -20,19 +23,42 @@
         text-align: center;
     }
 
+    #bg {
+        position: fixed;
+        z-index:-1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url("user-background.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    p {
+        margin-bottom: .8em;
+    }
+
     a,
     a:hover,
     a:visited,
     a:active,
     a:focus {
         color: var(--color-foreground);
-        text-decoration: none;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 3rem;
     }
 
     /* align everything inside the container div in a grid vertically and horizontally centered */
     #container {
+        margin: 3rem;
         display: grid;
         place-items: center;
-        height: 100vh;
+        height: calc(100vh - 6rem);
+        width: calc(100vw - 6rem);
     }
 </style>

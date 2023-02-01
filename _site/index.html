@@ -1,17 +1,40 @@
 <head>
-    <title>{}</title>
+    <title>Test Artist</title>
     <meta title=”description” content=This is an example of the description>
     <link rel="icon" type="image/png" href="/user-favicon.png">
 </head>
 
 <body>
+    
     <div id="container">
         <div id="index-container">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div id="title-container">
+
+        
+
+        
         <h1 id="title-text">Test Artist</h1>
+        
+
+        
     </div>
-        <div id="menu-links">
-            
+    <div id="menu-links">
+        
         <a class="menu-link" href=http://spotify.com>Spotify</a>
         
         <a class="menu-link" href=http://youtube.com>Youtube</a>
@@ -38,7 +61,7 @@
     }
 
     #index-container {
-        width: 80%;
+        width: 90%;
     }
 
     #title-container {
@@ -49,8 +72,13 @@
         margin-bottom: .3em;
     }
 
-    #menu-links a {
-        margin: 0 1rem;
+    #menu-links a,
+    #menu-links a:visited,
+    #menu-links a:active,
+    #menu-links a:focus,
+    #menu-links a:hover {
+        margin: 0 1em;
+        text-decoration: none;
     }
 
     /* add a media query at 600px that stacks the links in the links div vertically */
@@ -58,8 +86,9 @@
         #menu-links {
             flex-direction: column;
         }
+
         #menu-links a {
-            margin: 1rem 0;
+            margin: 1em 0;
         }
     }
 </style>
@@ -76,19 +105,42 @@
         text-align: center;
     }
 
+    #bg {
+        position: fixed;
+        z-index:-1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url("user-background.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    p {
+        margin-bottom: .8em;
+    }
+
     a,
     a:hover,
     a:visited,
     a:active,
     a:focus {
         color: var(--color-foreground);
-        text-decoration: none;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 3rem;
     }
 
     /* align everything inside the container div in a grid vertically and horizontally centered */
     #container {
+        margin: 3rem;
         display: grid;
         place-items: center;
-        height: 100vh;
+        height: calc(100vh - 6rem);
+        width: calc(100vw - 6rem);
     }
 </style>

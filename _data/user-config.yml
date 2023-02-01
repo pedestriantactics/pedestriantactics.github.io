@@ -2,8 +2,12 @@
 title: Test Artist
 # whether to show the title on the front page
 show-title: true
+# whether to show the image (user-image.png)
+show-image: false
 # if the image will be above or below the title
-image-above-title: true
+image-above-title: false
+# whether to show the background (user-background.png)
+show-background-image: false
 # this shows up below the title in a google search result
 description: This is an example of the description
 # these will be on the main page, you can add or remove as many as you want
