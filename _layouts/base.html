@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    {% if site.data.user-config.show-background-image == true %}
+    {% if site.data.user-config.background-image != "" %}
     <div id="bg"></div>
     {% endif %}
     <div id="container">
@@ -35,7 +35,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-image: url("user-background.png");
+        background-image: url("../user-images/{{site.data.user-config.background-image}}");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

@@ -3,7 +3,7 @@
 
 :root {
     /* color of the whole page */
-    --color-background: darkslategray;
+    --color-background: #ff0055;
     /* color of text elements */
     --color-foreground: white;
 }

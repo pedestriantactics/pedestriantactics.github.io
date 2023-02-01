@@ -9,9 +9,9 @@ show-intro-text: false
 # in case you want to hide the links for some reason
 show-links: true
 # the links are arranged horizontally except on mobile, this forces them to be vertical
-vertical-links: true
-# whether to show the background (user-background.png)
-show-background-image: false
+vertical-links: false
+# optional. will fill the screen. place the image in the user-images folder and add the name of it here
+background-image: sky.png
 # this is just a convenient switch to hide all the images without having to delete the text below
 show-images: false
 # whether to put the images above or below the intro text
