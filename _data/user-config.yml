@@ -13,7 +13,7 @@ show-links: true
 # the links are arranged horizontally except on mobile, this forces them to be vertical
 vertical-links: false
 # optional. will fill the screen. place the image in the user-images folder and add the name of it here
-background-image: 
+background-image:
 # this is just a convenient switch to hide all the images without having to delete the text below
 show-images: false
 # whether to put the images above or below the intro text
@@ -23,7 +23,7 @@ images-above-intro-text: true
 images:
 
 - alt: Logo
-  url: pt-handwritten-white.png
+  url: pt-handwritten-black.png
 
 - alt: Bio photo
   url: pt-bio-photo.png
@@ -34,7 +34,7 @@ links:
 - title: Spotify
   url: http://spotify.com
 
-- title: YouTube
+- title: Twitter
   url: http://youtube.com
 
 - title: Custom page

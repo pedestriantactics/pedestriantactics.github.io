@@ -3,8 +3,8 @@
 
 @font-face {
 	font-family: "Scaffolding";
-	src: url("../user-fonts/PT-F6Scaffolding-Regular.woff2") format("woff2"),
-		url("../user-fonts/PT-F6Scaffolding-Regular.woff") format("woff");
+	src: url("user-fonts/PT-F6Scaffolding-Regular.woff2") format("woff2"),
+		url("user-fonts/PT-F6Scaffolding-Regular.woff") format("woff");
 }
 
 :root {
@@ -14,10 +14,9 @@
     --color-foreground: black;
 }
 
-/* these are settings for all text unless otherwise specified */
+/* these are settings for all text */
 body {
     font-family: 'Scaffolding', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 500;
 }
 
 /* this is the style for the intro text */
@@ -42,8 +41,6 @@ body {
 
 /* this is the title text */
 #title-text {
-    /* font-family: 'Permanent Marker', Helvetica, Arial, sans-serif; */
-    font-weight: medium;
     /* this is the title size and will change based on the browser's width */
     /* use 10vw for a medium sized name like John Smith */
     /* use 8vw for a longer name like Pedestrian Tactics */
