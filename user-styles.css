@@ -31,7 +31,7 @@ body {
     text-transform: uppercase;
 }
 
-/* setting this to a pixel value will cap the width of the title and images */
+/* setting this to a pixel value will cap the width of title text, images and description */
 #title-container {
     width: 100%;
 }
@@ -40,4 +40,9 @@ body {
 #title-text {
     font-family: 'Permanent Marker', Helvetica, Arial, sans-serif;
     font-weight: medium;
+    /* this is the title size and will change based on the browser's width */
+    /* use 10vw for a medium sized name like John Smith */
+    /* use 8vw for a longer name like Pedestrian Tactics */
+    /* use 20vw for a shorter name like Klippee */
+    font-size: 10vw;
 }
