@@ -1,7 +1,9 @@
-# this will be used on the front page of the site and as the title of the site tab
-title: PT-DLC5-1
+# this will show up on the tab for the site
+meta-title: "PT-DLC5"
 # this shows up below the title in a google search result
-description: This is an example of the description
+meta-description: This is an example of the description
+# this shows up on the main page
+title: "\uE001PT-DLC5-1"
 # whether to show the title on the front page
 show-title: true
 # this is a convenient shortcut to hide the intro text which can be changed in user-intro-text.md

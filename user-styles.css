@@ -48,5 +48,5 @@ body {
     /* use 10vw for a medium sized name like John Smith */
     /* use 8vw for a longer name like Pedestrian Tactics */
     /* use 20vw for a shorter name like Klippee */
-    font-size: 16vw;
+    font-size: 14vw;
 }
