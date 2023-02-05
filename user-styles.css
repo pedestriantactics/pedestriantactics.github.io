@@ -6,9 +6,9 @@
 /* this is an example of importing a font from the user-fonts folder */
 /* when referencing it below, use the name you gave it in font-family */
 @font-face {
-	font-family: "Scaffolding";
-	src: url("user-fonts/PT-F6Scaffolding-Regular.woff2") format("woff2"),
-		url("user-fonts/PT-F6Scaffolding-Regular.woff") format("woff");
+    font-family: "Scaffolding";
+    src: url("user-fonts/PT-F6Scaffolding-Regular.woff2") format("woff2"),
+        url("user-fonts/PT-F6Scaffolding-Regular.woff") format("woff");
 }
 
 :root {
@@ -49,5 +49,5 @@ body {
     /* use 10vw for a medium sized name like John Smith */
     /* use 8vw for a longer name like Pedestrian Tactics */
     /* use 20vw for a shorter name like Klippee */
-    font-size: 14vw;
+    font-size: 13vw;
 }
