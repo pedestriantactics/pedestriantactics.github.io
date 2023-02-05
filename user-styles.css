@@ -1,6 +1,10 @@
+/* this is an example of importing a google font */
+/* Locate the font you want and put the name where "Permanent+Marker" is (use + if there's a space) */
+/* When referencing it below, type it like this 'Permanent Marker' */
 @import "https://fonts.googleapis.com/css?family=Permanent+Marker";
-@import "https://fonts.googleapis.com/css?family=Montserrat";
 
+/* this is an example of importing a font from the user-fonts folder */
+/* when referencing it below, use the name you gave it in font-family */
 @font-face {
 	font-family: "Scaffolding";
 	src: url("user-fonts/PT-F6Scaffolding-Regular.woff2") format("woff2"),
