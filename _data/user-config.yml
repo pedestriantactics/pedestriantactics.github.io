@@ -3,7 +3,7 @@ meta-title: "PT-DLC5"
 # this shows up below the title in a google search result
 meta-description: This is an example of the description
 # this shows up on the main page
-title: "\uE001PT-DLC5-1"
+title: "\uE001PT-DLC5-2"
 # whether to show the title on the front page
 show-title: true
 # this is a convenient shortcut to hide the intro text which can be changed in user-intro-text.md

@@ -1,5 +1,5 @@
 <head>
-<!-- This website was created using The Template (PT-DLC5) by Pedestrian Tactics -->
+<!-- This website was created using The Template (PT-DLC5-2) by Pedestrian Tactics -->
     <title>{%if page.title %}{{page.title}} - {% endif %}{{site.data.user-config.meta-title}}</title>
     <meta title=”description” content={{site.data.user-config.description}}>
     <link rel="icon" type="image/png" href="/user-favicon.png">
@@ -19,7 +19,7 @@
     @import "/user-styles.css";
 
     :root {
-        --spacer: 3rem;
+        --margin: 3rem;
         background-color: var(--color-background);
         color: var(--color-foreground);
         text-align: center;
@@ -56,21 +56,22 @@
 
     img {
         width: 100%;
-        margin-bottom: var(--spacer);
+        /* this isn't the margin so it doesn't collapse when the device gets smaller */
+        margin-bottom: 3rem;
     }
 
     /* align everything inside the container div in a grid vertically and horizontally centered */
     #container {
-        margin: var(--spacer);
+        margin: var(--margin);
         display: grid;
         place-items: center;
-        height: calc(100vh - calc(var(--spacer) * 2));
-        width: calc(100vw - calc(var(--spacer) * 2));
+        height: calc(100vh - calc(var(--margin) * 2));
+        width: calc(100vw - calc(var(--margin) * 2));
     }
 
     @media screen and (max-width: 600px) {
         :root {
-            --spacer: .3rem;
+            --margin: .3rem;
         }
     }
 </style>
