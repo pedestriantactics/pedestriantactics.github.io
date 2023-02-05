@@ -32,10 +32,16 @@ images:
 links:
 
 - title: Spotify
-  url: http://spotify.com
+  url: https://open.spotify.com/artist/6TFOalvhHRXh8JmQTVSoyY?si=by2Uv4_pRSGLL92wMk5K3g
 
 - title: Twitter
-  url: http://youtube.com
+  url: http://twitter.com/pedestriantac
+  
+- title: Instagram
+  url: http://instagram.com/pedestriantactics
+  
+- title: Email
+  url: mailto:hi@pedestriantactics.com
 
 - title: Custom page
   url: user-custom-page
