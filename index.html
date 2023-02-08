@@ -1,27 +1,43 @@
 ---
 layout: base
 ---
-
 <div id="index-container">
     <div id="title-container">
         {% if site.data.user-config.show-title == true %}
         <h1 id="title-text">{{site.data.user-config.title}}</h1>
         {% endif %}
-
         <!-- images above intro text -->
         {% if site.data.user-config.show-images == true and site.data.user-config.images-above-intro-text == true %}
         {% for image in site.data.user-config.images %}
         <img class="title-image" src="/user-images/{{image.url}}" alt="{{image.alt}}">
         {% endfor %}
         {% endif %}
-
+        <!-- first assign the images to a variable -->
+        {% assign images = site.static_files | where_exp:"item", "item.path contains 'assets/images'" %}
+        {% assign images = images | sort: 'name' %}
+        {% assign columnCount = 3 %}
+        {% assign currentIndex = 0 %}
+        <div id="masonry-container">
+            {% for i in (1..columnCount) %}
+            <div class="masonry-column">
+                {% for image in images %}
+                {% if currentIndex == 0 %}
+                <img class="title-image" src="{{ image.path }}" alt="{{ image.name }}">
+                {% endif %}
+                {% assign currentIndex = currentIndex | plus: 1 %}
+                {% if currentIndex == columnCount %}
+                {% assign currentIndex = 0 %}
+                {% endif %}
+              {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
         {% capture my_include %}{% include_relative user-intro-text.md %}{% endcapture %}
         {% if my_include != "" and site.data.user-config.show-intro-text == true %}
         <div id="intro-text">
             {{ my_include | markdownify }}
         </div>
         {% endif %}
-
         <!-- images below intro text -->
         {% if site.data.user-config.show-images == true and site.data.user-config.images-above-intro-text == false %}
         {% for image in site.data.user-config.images %}
@@ -33,20 +49,36 @@ layout: base
     {% if site.data.user-config.vertical-links == false %}
     <div id="menu-links">
         {% for item in site.data.user-config.links %}
-        <a class="menu-link" href={{item.url}}>{{item.title}}</a>
+        <a class="menu-link" href="{{ item.url }}">{{ item.title }}</a>
         {% endfor %}
     </div>
     {% else %}
     <div id="menu-links-vertical">
         {% for item in site.data.user-config.links %}
-        <a class="menu-link" href={{item.url}}>{{item.title}}</a>
+        <a class="menu-link" href="{{ item.url }}">{{ item.title }}</a>
         {% endfor %}
     </div>
     {% endif %}
     {% endif %}
 </div>
-
 <style>
+#masonry-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.masonry-column {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.masonry-column img {
+    /* width: 100%; */
+    margin-bottom: 1rem;
+}
+
     /* make the contents arrange themselves horizontally with 2rem space in between */
     #menu-links {
         display: flex;
