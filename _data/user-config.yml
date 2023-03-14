@@ -5,7 +5,7 @@ meta-description: This is an example of the description
 # whether to show the title on the front page
 show-title: true
 # this shows up on the main page
-title: "\uE001PT-DLC5-2"
+title: "\uE001PT-DLC5-3"
 # this is a convenient shortcut to hide the intro text which can be changed in user-intro-text.md
 show-intro-text: false
 # whether to show the background or not
@@ -31,16 +31,20 @@ show-links: true
 # the links are arranged horizontally except on mobile, this forces them to be vertical
 vertical-links: false
 # these will be on the main page, you can add or remove as many as you want
+# adding the parameter new-tab and setting it to true will open the link in a new browser tab
 links:
 
 - title: Spotify
   url: https://open.spotify.com/artist/6TFOalvhHRXh8JmQTVSoyY?si=by2Uv4_pRSGLL92wMk5K3g
+  new-tab: true
 
 - title: Twitter
   url: http://twitter.com/pedestriantac
+  new-tab: true
   
 - title: Instagram
   url: http://instagram.com/pedestriantactics
+  new-tab: true
   
 - title: Email
   url: mailto:hi@pedestriantactics.com

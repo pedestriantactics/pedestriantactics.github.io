@@ -33,13 +33,13 @@ layout: base
     {% if site.data.user-config.vertical-links == false %}
     <div id="menu-links">
         {% for item in site.data.user-config.links %}
-        <a class="menu-link" href={{item.url}}>{{item.title}}</a>
+        <a class="menu-link" href={{item.url}} {% if item.new-tab %}target="_blank"{% endif %}>{{item.title}}</a>
         {% endfor %}
     </div>
     {% else %}
     <div id="menu-links-vertical">
         {% for item in site.data.user-config.links %}
-        <a class="menu-link" href={{item.url}}>{{item.title}}</a>
+        <a class="menu-link" href={{item.url}} {% if item.new-tab %}target="_blank"{% endif %}>{{item.title}}</a>
         {% endfor %}
     </div>
     {% endif %}
