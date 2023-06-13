@@ -33,6 +33,12 @@ body {
     font-size: 13vw;
 }
 
+/* The alignment for all text and images */
+/* you can use left, right, or center */
+p {
+    text-align: center;
+}
+
 /* this is the style for the intro text */
 #intro-text p {
     font-size: 32pt;
@@ -52,4 +58,27 @@ body {
 /* you can use a percentage of the whole page or a pixel value */
 #title-container {
     width: 100%;
+}
+
+/* image size for custom pages */
+/* use % for a percentage of the total width or px for an actual pixel width */
+#custom-page-container img {
+    width: 30%;
+}
+
+/* in case you would like the alignment of the text on a custom page to be different */
+#custom-page-container p {
+    text-align: center;
+}
+
+/* the character used for the back button on custom pages */
+/* you can use any unicode character */
+#back-button a::before {
+    content: "<";
+}
+
+/* vertical position for the back button on the custom page */
+/* it can be top or center */
+#back-button {
+    align-items: center;
 }
