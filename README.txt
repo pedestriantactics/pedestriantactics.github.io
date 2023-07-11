@@ -11,4 +11,3 @@ The favicon (which is shown when someone bookmarks the website) can be changed b
 CREDITS
 
 Jekyll: https://jekyllrb.com
-Fitty: https://github.com/rikschennink
